@@ -47,6 +47,10 @@ fieldset {
 
 textarea {
     resize: vertical;
+    width: 60%;
+    text-align: center;
+    line-height: 1.5em;
+    margin-left: 20%;
 }
 
 .chromeframe {
@@ -111,17 +115,26 @@ body {
     text-align: center;
 }
 
-.email input {
-    width: 100%;
+.email {
+    width: 90%;
+    line-height: 1.5em;
+    margin-left: 5%;
 }
 
-.password input {
-    width: 45%;
+.password  {
+    width: 41%;
+    display: inline-block;
+    line-height: 1.5em;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
-.confirm input {
-    width: 45%;
-    padding-left: 10%;
+.confirm {
+    width: 41%;
+    display: inline-block;
+    line-height: 1.5em;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 .heroButton {
@@ -130,9 +143,12 @@ body {
     border-radius: 4px;
     box-shadow: 2px;
     color: white;
-    line-height: 1.25em;
-    width: 80%;
+    line-height: 2.5em;
+    font-size: 1.5em;
+    width: 92%;
+    margin-left: 4%;
     margin-bottom: 20%;
+    margin-top: 5%;
     
 }
 .contactButton {
@@ -153,6 +169,15 @@ body {
     color: white;
     line-height: 1.25em;
     width: 50%;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.contact p {
+    margin-left: 20%;
+    text-align: left;
+    margin-top: 5%;
+    display: inline-block;
 }
 
 #leftedColumn {
@@ -196,8 +221,9 @@ body {
 #Plans,
 #Contact ul {
     text-align: left;
-
 }
+
+#Contact
 
  h3 {
     color: #9a4d9e;
@@ -267,6 +293,8 @@ table {
     width: auto;
     display: inline-table;
     font-size: .8em;
+    vertical-align: top;
+    height: 80%;
 }
 
 table h3, h4 {
