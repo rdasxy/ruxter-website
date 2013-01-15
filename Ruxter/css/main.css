@@ -571,16 +571,16 @@ ul#menu li.hasChildren.hover > a span {
 
 /*General Accordion****************************************************************************/
 /*Set style of open slide*/
-.accordion section:target { background:#FFF; padding:10px;}
-.accordion section:target:hover { background:#FFF; }
-.accordion section:target h2 {width:100%;}
-.accordion section:target h2 a{ color:#333; padding:0;}
+.accordion section:target { background:#e2e2e2; padding:10px;}
+.accordion section:target:hover { background:#e2e2e2; }
+.accordion section:target h3 {width:100%;}
+.accordion section:target h3 a{ color:#9a4d9e; padding:0;}
 .accordion section:target p {display:block;}
-.accordion section h2 a{padding:8px 10px;display:block; font-size:16px; font-weight:normal;color:#eee; text-decoration:none; }
+.accordion section h3 a{padding:8px 10px;display:block; font:arial; font-size:1.5em; text-align:center; font-weight:normal;color:#9a4d9e; text-decoration:none; }
 
 /*set style of closed slide*/
-.accordion section{ float:left; overflow:hidden; color:#333; cursor:pointer; background: #333; margin:3px; }
-.accordion section:hover {background:#444;}
+.accordion section{ float:left; overflow:hidden; color:#333; background: #e2e2e2; margin:3px; }
+.accordion section:hover {background:#e2e2e2;}
 .accordion section p { display:none; }
 .accordion section:after{position:relative;font-size:24px;color:#000;font-weight:bold;}
 .accordion section:nth-child(1):after{content:'1';}
@@ -599,9 +599,9 @@ ul#menu li.hasChildren.hover > a span {
     transition:height 0.2s ease-out;
 }
 /*Set height of the slide*/
-.vertical :target{ height:250px; width:97%; }
+.vertical :target{ height:auto; float:left; width:100%; }
 
-.vertical section h2 { position:relative; left:0; top:-15px; }
+.vertical section h3 { position:relative; left:0; top: -20px;}
 
 /*Set position of the number on the slide*/
 .vertical section:after{ top:-60px;left:810px;}
@@ -964,7 +964,7 @@ nav a:hover {
    =============== */
 
     .wrapper {
-        width: 800px; /* 1140px - 10% for margins */
+        max-width: 800px; /* 1140px - 10% for margins */
         margin: 0 auto;
         position: relative;
         z-index: 1;
