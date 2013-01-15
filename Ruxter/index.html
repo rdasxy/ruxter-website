@@ -12,8 +12,18 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/flexslider.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script type="text/javascript">
+                $(window).load(function() {
+                $('.flexslider').flexslider({
+                animation: "slide"
+                });
+            });
+        </script>
+
+        
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -23,32 +33,50 @@
         <div class="header-container" >
             <header class="wrapper clearfix">
                 <a href="#hero"><img src="img/RuxterLogo.png" /></a>
-                <nav>
-                    <!--<ul> -->
-                        <a href="#About">About</a>
-                        <a href="#Mobile">Mobile Coupons</a>
-                        <a href="#Service">Services</a>
-                        <a href="#Plans">Plans</a>
-                        <a href="#Contact">Contact</a>
-                    <!--</ul> -->
+                <nav id="wide">
+                    <ul id="wide">
+                        <li><a id="wide" href="#About">About</a></li>
+                        <li><a id="wide" href="#Coupons">Mobile Coupons</a></li>
+                        <li><a id="wide" href="#Service">Services</a></li>
+                        <li><a id="wide" href="#Plans">Plans</a></li>
+                        <li><a id="wide" href="#Contact">Contact</a></li>
+                    </ul>
                 </nav>
+
+                <nav id="mobile" >
+                    <a id="mobile" data-toggle="collapse" class="btn btn-navbar">
+                        <span id="mobile" class="icon-bar"></span>
+                        <span id="mobile" class="icon-bar"></span>
+                        <span id="mobile" class="icon-bar"></span>
+                    </a>
+                    <ul id="menu mobile" class="overthrow">
+                        <li class="mobile"><a href="#hero" tabindex="1" accesskey="h" id="mobile">Home</a></li>
+                        <li class="about mobile"><a id="mobile" href="#About" tabindex="2">About</a></li>
+                        <li class="coupons mobile"><a id="mobile" href="#Coupons">Mobile Coupons</a></li>   
+                        <li class="services mobile"><a id="mobile" href="#Services">Services</a></li>
+                        <li class="plans mobile"><a id="mobile" href="#Plans">Plans</a></li>
+                        <li class="contact mobile"><a id="mobile" href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+
             </header>
         </div>
 
-        <div class="main-container">
-            <div class="main wrapper clearfix" id="hero">
+        <img class="heroImage" id="hero" src="img/RuxterHero.jpg"/>
 
-                <article>
-                    <h1>Go Mobile!</h1>
-                    <p>Get Started Now.<br>Connect with your mobile customers!</p>
-                    <p>Sign up below to start 30 day free trial.</p>
-                    <form>
-                    <input class="email" type="text" placeholder="Email address" ></input>
+        <div class="main">
+            <div class="wrapper wide" id="hero">
+                <article class="wide">
+                    <h1 class="wide">Go Mobile!</h1>
+                    <p class="wide">Get started now.<br>Connect with your mobile customers!</p>
+                    <p class="wide">Sign up below to start 30 day free trial.</p>
+                    <form class="wide">
+                    <input class="email wide" type="text" placeholder="Email address" ></input>
                     <br>
-                    <input class="password" type="text" placeholder="Password" ></input>
-                    <input class="confirm" type="text" placeholder="Confirm Password" ></input>
+                    <input class="password wide" type="password" placeholder="Password" ></input>
+                    <input class="confirm wide" type="password" placeholder="Confirm Password" ></input>
                     <br>
-                    <button type="submit" class="heroButton">Sign Up</button>
+                    <button type="submit" class="heroButton wide">Sign Up</button>
                     </form>
                 </article>
 
@@ -58,34 +86,75 @@
             <div class="main wrapper clearfix" id="About">
 
                 <article class="about">
-                        <h1>About Ruxter</h1>
-                        <img src="img/AboutBanner.png">
-                        <p>Ruxter gives you the power to reach your mobile customers. With easy-to-use DIY templates and tools, Ruxter is a one-stop-shop for everything you need to establish your mobile online presence.</p>
-                        <p>Take the cost and technical hassles out of mobile marketing - with Ruxter, it’s easy to make mobile part of your business, organization, or event with all the features you need:</p>
-                        <ul>
-                        <li>Build your personal mobile site in minutes.</li>
-                        <li>Be your own Groupon® with daily deals.</li>
-                        <li>Create and distribute mobile-optimized coupons via text message and social networks.</li>
-                        <li>Instant online mobile loyalty cards. (coming soon!)</li>
-                        <li>Social media integration to help you and your customers spread the word!</li>
-                        <li>Fast & effective text marketing tools.</li>
-                        <li>Charts & metrics to count your fans and followers.</li>
-                        <li>Integrated QR code with every mobile site!</li>
+                        <h1 id="Padded">What is Ruxter?</h1>
+                        <img class="wide" src="img/AboutBanner.png">
+                        <img class="mobile" src="img/AboutMobileBanner.png">
+                        <p id="wide">Ruxter gives you the power to reach your mobile customers. With easy-to-use DIY templates and tools, Ruxter is a one-stop-shop for everything you need to establish your mobile online presence.</p>
+                        <p id="wide">Take the cost and technical hassles out of mobile marketing - with Ruxter, it’s easy to make mobile part of your business, organization, or event with all the features you need:</p>
+                        <ul id="wide">
+                            <li id="wide">Build your personal mobile site in minutes.</li>
+                            <li id="wide">Be your own Groupon® with daily deals.</li>
+                            <li id="wide">Create and distribute mobile-optimized coupons via text message and social networks.</li>
+                            <li id="wide">Instant online mobile loyalty cards. (coming soon!)</li>
+                            <li id="wide">Social media integration to help you and your customers spread the word!</li>
+                            <li id="wide">Fast & effective text marketing tools.</li>
+                            <li id="wide">Charts & metrics to count your fans and followers.</li>
+                            <li id="wide">Integrated QR code with every mobile site!</li>
                         </ul>
-                        <p>Ruxter mobile sites work with any mobile phone. Build it once and you have a web app that performs great on iPhone®, Android®, Windows® and Blackberry® smartphones. (Older flip/feature phones too!)</p>
-                        <h3>Get started now. Connect with your mobile customers!</h3>
+                        <p id="wide">Ruxter mobile sites work with any mobile phone. Build it once and you have a web app that performs great on iPhone®, Android®, Windows® and Blackberry® smartphones. (Older flip/feature phones too!)</p>
+                        <h3 id="wide">Get started now. Connect with your mobile customers!</h3>
+                        <p id="mobile">Ruxter puts businesses both large and small on the mobile web and into the hands of their customers.</p>
+                        <p id="mobile">We offer mobile websites, mobile coupons, social media sharing, and marketing tools.</p>
                 </article>
 
 
             </div> <!-- #about -->
 
-            <div class="main wrapper clearfix" id="Mobile">
-
-                <article>
+            <div class="main wrapper clearfix" id="Coupons">
                     
-                        <h1>Mobile Coupons</h1>
+                        <h1 id="Padded">Mobile Coupons</h1>
+                        
+                        <p>Ruxter is known for their mobile coupons. There are five easy steps in creating your own custom coupon:</p>
 
-                </article>
+                        <div class="flexslider" id="wide">
+                            <ul class="slides" id="wide">
+                                <li id="wide">
+                                    <img id="wide" src="img/wideSliderOne.png" />
+                                </li>
+                                <li id="wide">
+                                    <img id="wide" src="img/wideSliderTwo.png" />
+                                </li>
+                                <li id="wide">
+                                    <img id="wide" src="img/wideSliderThree.png" />
+                                </li>
+                                <li id="wide">
+                                    <img id="wide"src="img/wideSliderFour.png" />
+                                </li>
+                                <li id="wide">
+                                    <img id="wide"src="img/wideSLiderFive.png" />
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="flexslider" id="mobile">
+                            <ul class="slides" id="mobile">
+                                <li id="mobile">
+                                    <img id="mobile" src="img/mobileSliderOne.png" />
+                                </li>
+                                <li id="mobile">
+                                    <img id="mobile" src="img/mobileSliderTwo.png" />
+                                </li>
+                                <li id="mobile">
+                                    <img id="mobile" src="img/mobileSliderThree.png" />
+                                </li>
+                                <li id="mobile">
+                                    <img id="mobile" src="img/mobileSliderFour.png" />
+                                </li>
+                                <li id="mobile">
+                                    <img id="mobile" src="img/mobileSliderFive.png" />
+                                </li>
+                            </ul>
+                        </div>
 
 
             </div> <!-- #mobile -->
@@ -93,7 +162,7 @@
             <div class="main wrapper clearfix" id="Service">
 
                 <article>
-                        <h1>Services</h1>
+                        <h1 id="Padded">Services</h1>
                         <p>...But we do other nifty things besides coupons, too!</p>
                     <div id="leftedColumn">
                         <img src="img/ticketBadge.png" lable="Mobile Coupons">
@@ -121,26 +190,33 @@
 
                 <article>
                    
-                        <h1>Plans</h1>
-                        <table>
+                        <h1 id="Padded">Ruxter Plans</h1>
+                        <table id="wide">
                             <tbody>
-                                <tr><td><h3>Coupons Only<br>
-                                    <img src="img/couponBadge.png"><br>
-                                    $9</h3><h4>per month</h4>
-                                <button class="tableButton">Learn More</button></td></tr>
-                                <tr><td><p><strong>Mobilize </strong><br>30 Day FREE Trial</td></tr>
-                                <tr><td><p><strong>Connect </strong><br>50 Coupon Claims (per month)</p></td></tr>
-                                <tr><td><p><strong>Engage </strong><br>Ruxter Mobile Coupon Creator<br>
-                                    Send coupons via social media</p></td>
+                                <tr><td><h3>Coupons Only<br></h3>
+                                    <img id="Centered" src="img/couponBadge.png"><br>
+                                    <h3 id="Bigger">$9</h3><h4>per month</h4>
+                                    <button class="tableButton">Learn More</button></td>
+                                </tr>
+                                <tr><td><p><strong>Mobilize </strong><br>
+                                    30 Day FREE Trial</p></td>
+                                </tr>
+                                <tr><td><p><strong>Connect </strong><br>
+                                    50 Coupon Claims (per month)</p></td>
+                                </tr>
+                                <tr><td><p><strong>Engage </strong><br>
+                                    Ruxter Mobile Coupon Creator<br>
+                                    Send coupons via social media<br>
+                                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p></td>
                                 </tr>
                             </tbody>
                         </table>
 
-                        <table>
+                        <table id="wide">
                             <tbody>
-                                <tr><td><h3>Campaign Builder<br>
-                                    <img src="img/hammerBadge.png"><br>
-                                    $29</h3><h4>per month</h4>
+                                <tr><td><h3>Campaign Builder<br></h3>
+                                    <img id="Centered" src="img/hammerBadge.png"><br>
+                                    <h3 id="Bigger">$29</h3><h4>per month</h4>
                                     <button class="tableButton">Learn More</button></td>
                                 </tr>
                                 <tr><td><p><strong>Mobilize</strong><br>
@@ -158,16 +234,16 @@
                                     Ruxter Mobile Coupon Creator<br>
                                     Send coupons via social media<br>
                                     Send coupons via text message<br>
-                                    QR Code Generator<br></p></td>
+                                    QR Code Generator<br><br><br><br><br><br><br><br></p></td>
                                 </tr>
                             </tbody>
                         </table>
 
-                        <table>
+                        <table id="wide">
                             <tbody>
-                                <tr><td><h3>Mobile Pro<br>
-                                    <img src="img/rocketBadge.png"><br>
-                                    $49</h3><h4>per month</h4>
+                                <tr><td><h3>Mobile Pro<br></h3>
+                                    <img id="Centered" src="img/rocketBadge.png"><br>
+                                    <h3  id="Bigger">$49</h3><h4>per month</h4>
                                     <button class="tableButton">Learn More</button></td>
                                 </tr>
                                 <tr><td><p><strong>Mobilize</strong><br>
@@ -186,16 +262,17 @@
                                     Ruxter Mobile Coupon Creator<br>
                                     Send coupons via social media<br>
                                     Send coupons via text message<br>
-                                    QR Code Generator<br></p></td>
+                                    QR Code Generator<br><br><br><br><br><br><br></p></td>
+
                                 </tr>
                             </tbody>
                         </table>
 
-                        <table>
+                        <table id="wide">
                             <tbody>
-                                <tr><td><h3>Mobile Enterprise<br>
-                                    <img src="img/blockBadge.png"><br>
-                                    $99</h3><h4>per month</h4>
+                                <tr><td><h3>Mobile Enterprise<br></h3>
+                                    <img id="Centered" src="img/blockBadge.png"><br>
+                                    <h3 id="Bigger">$99</h3><h4>per month</h4>
                                     <button class="tableButton">Learn More</button></td>
                                 </tr>
                                 <tr><td><p><strong>Mobilize </strong><br>
@@ -219,11 +296,38 @@
                                     Send coupons via text message<br>
                                     QR Code Generator<br>
                                     Ruxter Decal Pack with <br>
-                                    Custom QR Code<br></p></td>
+                                    Custom QR Code<br><br></p></td>
                                 </tr>
                             </tbody>
                         </table>
                    
+
+                        <div class="accordion vertical mobile">
+                            <section id="vertabout">
+                            <h2><a href="#vertabout">About Us</a></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.</p>
+                            </section>
+                            <section id="vertservices">
+                            <h2><a href="#vertservices">Services</a></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.</p>
+                            </section>
+                            <section id="vertblog">
+                            <h2><a href="#vertblog">Blog</a></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.</p>
+                            </section>
+                            <section id="vertportfolio">
+                                <h2><a href="#vertportfolio">Portfolio</a></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.</p>
+                            </section>
+                            <section id="vertcontact">
+                                <h2><a href="#vertcontact">Contact</a></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id lobortis massa. Nunc viverra velit leo, sit amet elementum mi. Fusce posuere nunc a mi tempus malesuada. Curabitur facilisis rhoncus eros eget placerat. Aliquam semper mauris sit amet justo tempor nec lacinia magna molestie. Etiam placerat congue dolor vitae adipiscing. Aliquam ac erat lorem, ut iaculis justo. Etiam mattis dignissim gravida. Aliquam nec justo ante, non semper mi. Nulla consectetur interdum massa, vel porta enim vulputate sed. Maecenas elit quam, egestas eget placerat non, fringilla vel eros. Nam vehicula elementum nulla sed consequat. Phasellus eu erat enim. Praesent at magna non massa dapibus scelerisque in eu lorem.</p>
+                            </section>
+                        </div>
+
+
+
+
                 </article>
 
             </div> <!-- #plans -->
@@ -231,15 +335,15 @@
             <div class="main wrapper clearfix" id="Contact">
 
                 <article>
-                   
-                        <h1>Contact</h1>
+                        <img class="logo" src="img/RuxterLogo2.png">
+                        <h1 id="Padded">Contact Us</h1>
 
                     <form>
-                        <h4>Name</h4>
-                        <input type="text"></input><br>
-                        <h4>Email</h4>
-                        <input type="text"></input><br>
-                        <h4>Message</h4>
+                        <h4 id="contactLable">Name</h4>
+                        <input type="text" class="contactInput"></input><br>
+                        <h4 id="contactLable">Email</h4>
+                        <input type="text" class="contactInput"></input><br>
+                        <h4 id="contactLable">Message</h4>
                         <textarea rows="5"></textarea><br><br>
                         <button type="submit" class="contactButton">Submit</button>
                     </form>
@@ -251,10 +355,31 @@
         </div> <!-- #main-container -->
 
         <div class="footer-container">
-            <footer class="wrapper">
-                
-
-            </footer>
+            <div id="BackTop">
+                <a href="#">Back to Top</a>
+            </div>
+            <div>
+                <a id="footerColumn" href="#">Terms & Conditions</a>
+                <a id="footerColumn" href="#">Privacy</a>
+            </div>
+            <div id="GreySpan">               
+                <p>&copy; 2012 Ruxter</p>
+            </div>
+            <div id="footerNav" class="wide">
+                <a class="wide" href="">CONTACT</a>
+                <a class="wide" href="">INVESTORS</a>
+                <a class="wide" href="">LEGAL</a>
+                <a class="wide" href="">FAQ</a>
+                <a class="wide" href="">RESOURCES</a>
+                <a class="wide" href="">CENTER</a>
+                <a class="wide" href="">RESELLERS</a>
+                <a class="wide" href="">LOGIN</a>
+                <a class="wide" href=""><img id="wide" src="img/social_ruxter.png"></a>
+                <a class="wide" href=""><img id="wide" src="img/social_facebook.png"></a>
+                <a class="wide" href=""><img id="wide" src="img/social_twitter.png"></a>
+                <a class="wide" href=""><img id="wide" src="img/social_linkedin.png"></a>
+                <a class="wide" href=""><img id="wide" src="img/social_youtube.png"></a>
+            </div id="footerNav">
         </div>
 
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
@@ -262,5 +387,9 @@
         <script src="js/vendor/jquery-1.8.3.min.js"></script> 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/selectivizr-1.0.3.min.js"></script>
     </body>
 </html>
