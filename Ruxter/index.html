@@ -15,15 +15,6 @@
         <link rel="stylesheet" href="css/flexslider.css">
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <script type="text/javascript">
-                $(window).load(function() {
-                $('.flexslider').flexslider({
-                animation: "slide"
-                });
-            });
-        </script>
-
-        
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -135,7 +126,7 @@
                                 </li>
                             </ul>
                         </div>
-
+<!--
                         <div class="flexslider" id="mobile">
                             <ul class="slides" id="mobile">
                                 <li id="mobile">
@@ -155,7 +146,7 @@
                                 </li>
                             </ul>
                         </div>
-
+-->
 
             </div> <!-- #mobile -->
 
@@ -385,6 +376,13 @@
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
         <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>-->
         <script src="js/vendor/jquery-1.8.3.min.js"></script> 
+        <script type="text/javascript">
+                $(window).load(function() {
+                    $('.flexslider').flexslider({
+                    animation: "slide"
+                });
+            });
+        </script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/jquery.flexslider-min.js"></script>
