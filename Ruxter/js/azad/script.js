@@ -58,7 +58,7 @@ $(function() {
 	
 		// Checking if the top-right button is visible.
 		if ($("nav a.btn-navbar").is(":visible")) {
-
+			
 			// Making the dropdown magically appear onclick/touch.
 			$('nav a.btn-navbar').on('click', function() {
 				$('ul#menu').slideToggle('fast', function() {
