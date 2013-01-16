@@ -289,6 +289,17 @@ body {
     width: 100%;
 }
 
+.caption {
+    margin-top: 15%;
+    margin-bottom: 2%;
+    display: block;
+    width: 100%;
+}
+
+.caption strong {
+    color: #9a4d9e;
+}
+
 #About, 
 #Coupons, 
 #Service,
