@@ -368,6 +368,10 @@ table h3, h4 {
     text-align: center;
 }
 
+h4 {
+    font-weight: normal;
+}
+
 table img {
     width: 60%;
     text-align: center;
@@ -591,9 +595,9 @@ ul#menu li.hasChildren.hover > a span {
 .accordion section:after{position:relative;font-size:24px;color:#000;font-weight:bold;}
 .accordion section:nth-child(1):after{content: url(<img src="img/DownArrow.png" />);}
 .accordion section:nth-child(2):after{content: url(<img src="img/DownArrow.png" />);}
-.accordion section:nth-child(3):after{content: url(<img src="img/" />);}
-.accordion section:nth-child(4):after{content: url(<img src="img/" />);}
-.accordion section:nth-child(5):after{content: url(<img src="img/" />);}
+.accordion section:nth-child(3):after{content: url(<img src="img/DownArrow.png" />);}
+.accordion section:nth-child(4):after{content: url(<img src="img/DownArrow.png" />);}
+.accordion section:nth-child(5):after{content: url(<img src="img/DownArrow.png" />);}
 /*End General Accordion****************************************************************************/
 
 /*Vertical Accordion *************************************************************************/
@@ -605,7 +609,7 @@ ul#menu li.hasChildren.hover > a span {
     transition:height 0.2s ease-out;
 }
 /*Set height of the slide*/
-.vertical :target{ height:auto; float:left; width:100%; }
+.vertical :target{ height:auto; float:left; width:95%; }
 
 .vertical section h3 { position:relative; left:0; top: -20px;}
 
