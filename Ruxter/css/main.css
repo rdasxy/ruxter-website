@@ -323,6 +323,7 @@ h3 {
     padding: 30px 0;
     z-index: 1;
     position: relative;
+    margin: 0;
 }
 
 .main article h1 {
@@ -411,6 +412,11 @@ table img {
 
 #leftedColumn p {
     display: inline-block;
+}
+
+.accordionBadge {
+    width: 30%;
+    margin-left: 35%;
 }
 
 .logo {
@@ -573,7 +579,7 @@ ul#menu li.hasChildren.hover > a span {
 /*Set style of open slide*/
 .accordion section:target { background:#e2e2e2; padding:10px;}
 .accordion section:target:hover { background:#e2e2e2; }
-.accordion section:target h3 {width:100%;}
+.accordion section:target h3 {width:100%; text-align: center;}
 .accordion section:target h3 a{ color:#9a4d9e; padding:0;}
 .accordion section:target p {display:block;}
 .accordion section h3 a{padding:8px 10px;display:block; font:arial; font-size:1.5em; text-align:center; font-weight:normal;color:#9a4d9e; text-decoration:none; }
@@ -583,11 +589,11 @@ ul#menu li.hasChildren.hover > a span {
 .accordion section:hover {background:#e2e2e2;}
 .accordion section p { display:none; }
 .accordion section:after{position:relative;font-size:24px;color:#000;font-weight:bold;}
-.accordion section:nth-child(1):after{content:'1';}
-.accordion section:nth-child(2):after{content:'2';}
-.accordion section:nth-child(3):after{content:'3';}
-.accordion section:nth-child(4):after{content:'4';}
-.accordion section:nth-child(5):after{content:'5';}
+.accordion section:nth-child(1):after{content: url(<img src="img/DownArrow.png" />);}
+.accordion section:nth-child(2):after{content: url(<img src="img/DownArrow.png" />);}
+.accordion section:nth-child(3):after{content: url(<img src="img/" />);}
+.accordion section:nth-child(4):after{content: url(<img src="img/" />);}
+.accordion section:nth-child(5):after{content: url(<img src="img/" />);}
 /*End General Accordion****************************************************************************/
 
 /*Vertical Accordion *************************************************************************/
