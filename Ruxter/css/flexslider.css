@@ -39,7 +39,7 @@ html[xmlns] .slides {display: block;}
 
 /* FlexSlider Default Theme
 *********************************/
-.flexslider {margin: 0 0 60px; background: transparent; border: none; position: relative; zoom: 1;}
+.flexslider {margin: 0 0 60px; background: transparent; border: none; position: relative; margin-bottom: 200px; zoom: 1;}
 .flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
 .loading .flex-viewport {max-height: 300px;}
 .flexslider .slides {zoom: 1;}
@@ -49,19 +49,19 @@ html[xmlns] .slides {display: block;}
 
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
-.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: inline;  position: absolute; top: 80%; z-index: 10; cursor: pointer; text-indent: -9999px; }
-.flex-direction-nav .flex-next {position: absolute; background: url(../img/RightArrow.png) no-repeat 0 0; background-position: 100% 0; right: 35%; }
-.flex-direction-nav .flex-prev {position: absolute; background: url(../img/LeftArrow.png) no-repeat 0 0; left: 35%;}
+.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: inline;  position: relative; top: 98%; z-index: 10; cursor: pointer; text-indent: -9999px; }
+.flex-direction-nav .flex-next {position: absolute; background: url(../img/RightArrow.png) no-repeat 0 0; background-position: 100% 0; right: 25%; }
+.flex-direction-nav .flex-prev {position: absolute; background: url(../img/LeftArrow.png) no-repeat 0 0; left: 25%;}
 .flexslider:hover .flex-next {opacity: 0.8;}
 .flexslider:hover .flex-prev {opacity: 0.8;}
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
 .flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
 
 /* Control Nav */
-.flex-control-nav {width: auto; position: absolute; left: 40%; bottom: 22%; text-align: center;}
+.flex-control-nav {width: auto; position: relative; margin-top: 6%; text-align: center;}
 .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;} 
-.flex-control-paging {background: url(../img/sliderBGbar.png) no-repeat; background-size: 95% auto; background-position: left;}
-.flex-control-paging li a {width: 15px; height: 15px; display: block; background: #ebebeb; cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0px 0px 4px #333333;}
+.flex-control-paging {background: url(../img/sliderBGbar.png) no-repeat; background-size: 125px; background-position: center;}
+.flex-control-paging li a {width: 15px; height: 15px; display: block; background: #ebebeb; cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0px 0px 0px 2px #333333; moz-box-shadow: inset 0px 0px 0px 2px #333333; webkit-box-shadow: inset 0px 0px 0px 2px #333333;}
 .flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
 .flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
 
@@ -72,6 +72,6 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 
 @media screen and (max-width: 860px) {
-  .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
-  .flex-direction-nav .flex-next {opacity: 1; right: 0;}
+  .flex-direction-nav .flex-prev {opacity: 1; }
+  .flex-direction-nav .flex-next {opacity: 1; }
 }
