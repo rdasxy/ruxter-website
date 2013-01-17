@@ -412,6 +412,10 @@ table img {
     display: none;
 }
 
+.heroImage {
+    min-height: 290px;
+}
+
 #leftedColumn {
     width: 100%;
     float: left;
