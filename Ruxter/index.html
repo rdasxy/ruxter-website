@@ -58,7 +58,7 @@
                         <li class="mobile"><a href="#hero" tabindex="1" accesskey="h" id="mobile">Home</a></li>
                         <li class="about mobile"><a id="mobile" href="#About" tabindex="2">About</a></li>
                         <li class="coupons mobile"><a id="mobile" href="#Coupons">Mobile Coupons</a></li>   
-                        <li class="services mobile"><a id="mobile" href="#Services">Services</a></li>
+                        <li class="services mobile"><a id="mobile" href="#Service">Services</a></li>
                         <li class="plans mobile"><a id="mobile" href="#Plans">Plans</a></li>
                         <li class="contact mobile"><a id="mobile" href="#Contact">Contact</a></li>
                     </ul>
@@ -66,29 +66,23 @@
 
             </header>
         </div>
-
-        <img class="heroImage" id="hero" src="img/RuxterHero.jpg"/>
-
-        <div class="main">
-            <div class="wrapper wide" id="hero">
-                <article class="wide">
+        <div class="heroImage" id="hero">
+            <section class="clearfix">
+                <article class="heroWrapper wide">
                     <h1 class="wide">Go Mobile!</h1>
                     <p class="wide">Get started now.<br>Connect with your mobile customers!</p>
                     <p class="wide">Sign up below to start 30 day free trial.</p>
                     <form class="wide">
                     <input class="email wide" type="text" placeholder="Email address" ></input>
-                    <br>
                     <input class="password wide" type="password" placeholder="Password" ></input>
                     <input class="confirm wide" type="password" placeholder="Confirm Password" ></input>
-                    <br>
                     <button type="submit" class="heroButton wide">Sign Up</button>
                     </form>
-                </article>
-
-
-            </div> <!-- #hero -->
-
-            <div class="main wrapper clearfix" id="About">
+                </article><!-- #hero -->
+            </section>
+        </div>
+        <div class="main">
+            <div class="wrapper clearfix" id="About">
 
                 <article class="about">
                         <h1 id="Padded">What is Ruxter?</h1>
@@ -114,8 +108,9 @@
 
 
             </div> <!-- #about -->
-
-            <div class="main wrapper clearfix" id="Coupons">
+        </div>
+        <div class="main">
+            <div class="wrapper clearfix" id="Coupons">
                     
                         <h1 id="Padded">Mobile Coupons</h1>
                         
@@ -170,8 +165,9 @@
                             </ul>
                         </div>
             </div> <!-- #mobile -->
-
-            <div class="main wrapper clearfix" id="Service">
+        </div>
+        <div class="main">
+            <div class="wrapper clearfix" id="Service">
 
                 <article>
                         <h1 id="Padded">Services</h1>
@@ -197,8 +193,9 @@
 
 
             </div> <!-- #service -->
-
-            <div class="main wrapper clearfix" id="Plans">
+        </div>
+        <div class="main">
+            <div class="wrapper clearfix" id="Plans">
 
                 <article>
                    
@@ -401,20 +398,15 @@
                                     ·Custom QR Code<br></p>
                             </section>
                         </div>
-
-
-
-
                 </article>
 
             </div> <!-- #plans -->
-
-            <div class="main wrapper clearfix" id="Contact">
-
+        </div>
+        <div class="main">
+            <div class="wrapper clearfix" id="Contact">
                 <article>
                         <img class="logo" src="img/RuxterLogo2.png">
                         <h1 id="Padded">Contact Us</h1>
-
                     <form>
                         <h4 id="contactLable">Name</h4>
                         <input type="text" class="contactInput"></input><br>
@@ -424,13 +416,9 @@
                         <textarea rows="5"></textarea><br><br>
                         <button type="submit" class="contactButton">Submit</button>
                     </form>
-
                 </article>
-
-
             </div> <!-- #contact -->
         </div> <!-- #main-container -->
-
         <div class="footer-container">
             <div id="BackTop">
                 <a href="#">Back to Top</a>
@@ -451,11 +439,13 @@
                 <a class="wide" href="">CENTER</a>
                 <a class="wide" href="">RESELLERS</a>
                 <a class="wide" href="">LOGIN</a>
-                <a class="wide" href=""><img id="wide" src="img/social_ruxter.png"></a>
-                <a class="wide" href=""><img id="wide" src="img/social_facebook.png"></a>
-                <a class="wide" href=""><img id="wide" src="img/social_twitter.png"></a>
-                <a class="wide" href=""><img id="wide" src="img/social_linkedin.png"></a>
-                <a class="wide" href=""><img id="wide" src="img/social_youtube.png"></a>
+                <div class="socials">
+                    <a href=""><img id="wide" src="img/social_ruxter.png"></a>
+                    <a href=""><img id="wide" src="img/social_facebook.png"></a>
+                    <a href=""><img id="wide" src="img/social_twitter.png"></a>
+                    <a href=""><img id="wide" src="img/social_linkedin.png"></a>
+                    <a href=""><img id="wide" src="img/social_youtube.png"></a>
+                </div>
             </div id="footerNav">
         </div>
 
@@ -465,7 +455,6 @@
         <script type="text/javascript">
                 $(window).load(function() {
                     $('.flexslider').flexslider({
-                    
                 });
             });
         </script>
