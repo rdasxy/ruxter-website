@@ -361,7 +361,8 @@ h3 {
     padding: 20px 0;
 }
 table {
-    background: white;
+    background: url(../img/tableBGwhite.jpg);
+    background-size: 100% 100%;
     margin-left: 1%;
     border-top: 2px;
     border-top-color: #333333;
@@ -370,6 +371,20 @@ table {
     font-size: .8em;
     vertical-align: top;
     height: 80%;
+}
+
+@media handheld, screen and (max-width: 840px) {
+    
+    .widetable {
+        display: none;
+    }
+}
+
+@media handheld, screen and (min-width: 841px) {
+
+    .mobiletable {
+        display: none;
+    }
 }
 
 table h3, h4 {
@@ -385,6 +400,50 @@ table img {
     text-align: center;
 }
 
+.accordionBadge {
+    width: 30%;
+    margin-left: 36%;
+}
+
+/*General Accordion****************************************************************************/
+/*Set style of open slide*/
+.accordion section:target { background:#e2e2e2; padding-top: 15px;}
+.accordion section:target:hover { background:#e2e2e2; }
+.accordion section:target h3 {width:100%; text-align: center; }
+.accordion section:target h3 a{ color:#9a4d9e; padding:0; }
+.accordion section:target p {display:inline-block; margin-left: 5%;}
+.accordion section h3 a{padding:15px 0px;display:block; font:arial; font-size:1.5em; text-align:center; font-weight:normal;color:#9a4d9e; text-decoration:none; }
+
+/*set style of closed slide*/
+.accordion section{ float:left; overflow:hidden; color:#333; background: #e2e2e2; margin:0px; }
+.accordion section:hover {background:#e2e2e2;}
+.accordion section p { display:none; }
+.accordion section:after{position:relative;font-size:24px;color:#000;font-weight:bold;}
+.accordion section:nth-child(1):after{content: url(<img src="img/DownArrow.png" />);}
+.accordion section:nth-child(2):after{content: url(<img src="img/DownArrow.png" />);}
+.accordion section:nth-child(3):after{content: url(<img src="img/DownArrow.png" />);}
+.accordion section:nth-child(4):after{content: url(<img src="img/DownArrow.png" />);}
+/*End General Accordion****************************************************************************/
+
+/*Vertical Accordion *************************************************************************/
+.vertical section{ width:100%; height: 50px;
+    -webkit-transition:height 0.2s ease-out;
+    -moz-transition:height 0.2s ease-out;
+    -o-transition:height 0.2s ease-out;
+    -ms-transition:height 0.2s ease-out;
+    transition:height 0.2s ease-out;
+    box-shadow: inset 0 0 7px 1px #333;
+    -moz-box-shadow: inset 0 0 7px 1px #333;
+    -webkit-box-shadow: inset 0 0 7px 1px #333;
+}
+/*Set height of the slide*/
+.vertical :target{ height:auto; float:left; width:100%;}
+
+.vertical section h3 { position:relative; left:0; top: -20px; }
+
+/*Set position of the number on the slide*/
+.vertical section:after{ top:10px; left:10px;}
+.vertical section:target:after{ left:10px;}
 
 /* ===============
     ALL: IE Fixes
@@ -428,11 +487,6 @@ table img {
 
 #leftedColumn p {
     display: inline-block;
-}
-
-.accordionBadge {
-    width: 30%;
-    margin-left: 36%;
 }
 
 .caption {
@@ -597,47 +651,6 @@ ul#menu li.hasChildren a:hover > span,
 ul#menu li.hasChildren.hover > a span {
   background-position: right -138px !important;
 }
-
-/*General Accordion****************************************************************************/
-/*Set style of open slide*/
-.accordion section:target { background:#e2e2e2; padding-top: 15px;}
-.accordion section:target:hover { background:#e2e2e2; }
-.accordion section:target h3 {width:100%; text-align: center; }
-.accordion section:target h3 a{ color:#9a4d9e; padding:0; }
-.accordion section:target p {display:inline-block; margin-left: 5%;}
-.accordion section h3 a{padding:15px 0px;display:block; font:arial; font-size:1.5em; text-align:center; font-weight:normal;color:#9a4d9e; text-decoration:none; }
-
-/*set style of closed slide*/
-.accordion section{ float:left; overflow:hidden; color:#333; background: #e2e2e2; margin:0px; }
-.accordion section:hover {background:#e2e2e2;}
-.accordion section p { display:none; }
-.accordion section:after{position:relative;font-size:24px;color:#000;font-weight:bold;}
-.accordion section:nth-child(1):after{content: url(<img src="img/DownArrow.png" />);}
-.accordion section:nth-child(2):after{content: url(<img src="img/DownArrow.png" />);}
-.accordion section:nth-child(3):after{content: url(<img src="img/DownArrow.png" />);}
-.accordion section:nth-child(4):after{content: url(<img src="img/DownArrow.png" />);}
-/*End General Accordion****************************************************************************/
-
-/*Vertical Accordion *************************************************************************/
-.vertical section{ width:100%; height: 50px;
-    -webkit-transition:height 0.2s ease-out;
-    -moz-transition:height 0.2s ease-out;
-    -o-transition:height 0.2s ease-out;
-    -ms-transition:height 0.2s ease-out;
-    transition:height 0.2s ease-out;
-    box-shadow: inset 0 0 7px 1px #333;
-    -moz-box-shadow: inset 0 0 7px 1px #333;
-    -webkit-box-shadow: inset 0 0 7px 1px #333;
-}
-/*Set height of the slide*/
-.vertical :target{ height:auto; float:left; width:100%;}
-
-.vertical section h3 { position:relative; left:0; top: -20px; }
-
-/*Set position of the number on the slide*/
-.vertical section:after{ top:10px; left:10px;}
-.vertical section:target:after{ left:10px;}
-
 
 }
 
