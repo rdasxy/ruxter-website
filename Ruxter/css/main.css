@@ -76,7 +76,7 @@ body {
 }
 
 .wrapper {
-    width: 90%;
+    
     max-width: 800px;
     vertical-align: center;
 }
@@ -86,17 +86,11 @@ body {
    =================== */
 
 
-.header-container {
-    position: fixed;
-    background: url(../img/BGnav.png);
-    background-repeat: repeat-x;
-    background-overflow: hidden;
-    float: left;
-    width: 100%;
-    height: auto;
-    z-index: 2;
-    vertical-align: top;
-    
+
+
+.bannerLogo {
+    min-width: 89px;
+    min-height: 55px;
 }
 
 .footer-container {
@@ -361,6 +355,7 @@ h3 {
     color: white;
     padding: 20px 0;
 }
+
 table {
     background: url(../img/tableBGwhite.jpg);
     background-size: 100% 100%;
@@ -458,7 +453,7 @@ table img {
    Author's custom styles
    ========================================================================== */
 
-@media handheld, screen and (max-width: 570px) {
+@media handheld, screen and (max-width: 480px) {
   body { 
     width:100%;
      -webkit-text-size-adjust: 100%;
@@ -470,6 +465,21 @@ table img {
 
 .wide {
     display: none;
+}
+
+.header-container {
+    position: fixed;
+    background: url(../img/BGnav.png);
+    background-repeat: repeat-x;
+    background-overflow: hidden;
+    float: left;
+    width: 100%;
+    height: auto;
+    min-height: 55px;
+    z-index: 2;
+    vertical-align: top;
+    font-size: .8em;
+    
 }
 
 .heroImage {
@@ -536,6 +546,7 @@ nav .btn-navbar {
   padding: 7px 10px;
   margin-left: 5px;
   margin-right: 5px;
+  margin-top: 1%;
   -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
   -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
   box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
@@ -555,7 +566,7 @@ nav .btn-navbar .icon-bar {
   display: block;
   width: 18px;
   height: 2px;
-  background-color: #000;
+  background-color: #9a4d9e;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
@@ -564,7 +575,7 @@ nav .btn-navbar .icon-bar {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 nav .btn-navbar.active .icon-bar {
-  background-color: #a67b45;
+  background-color: #9a4d9e;
   -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
@@ -573,13 +584,13 @@ nav .btn-navbar.active .icon-bar {
   margin-top: 3px;
 }
 /* Using the touch scrolling on capable devices. */
-.overthrow-enabled .overthrow {
+/*.overthrow-enabled .overthrow {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
 /* The unordered list with the menu */
 ul#menu {
-  background: #000;
+  background: #444;
   display: none;
   position: absolute;
   top: 40px;
@@ -594,6 +605,7 @@ ul#menu {
 }
 ul#menu li {
   display: block;
+  margin: 0;
   height: 40px;
   width: 100%;
   border-bottom: 1px solid #ccc;
@@ -638,7 +650,7 @@ ul#menu li a:visited {
 }
 ul#menu li a:hover,
 ul#menu li a:active {
-  color: #a67b45;
+  color: #9a4d9e;
   text-decoration: none;
   outline: none;
   background: rgba(0, 0, 0, 0.05);
@@ -659,9 +671,24 @@ ul#menu li.hasChildren.hover > a span {
 
 
 
-@media screen and (min-width: 571px) and (max-width: 720px) {
+@media screen and (min-width: 481px) and (max-width: 720px) {
   body { width:100%; }
   /* and other declarations */
+
+.header-container {
+    position: fixed;
+    background: url(../img/BGnav.png);
+    background-repeat: repeat-x;
+    background-overflow: hidden;
+    float: left;
+    width: 100%;
+    height: auto;
+    min-height: 55px;
+    z-index: 2;
+    vertical-align: top;
+    font-size: .8em;   
+}
+
 #mobile {
     display: none;
 }
@@ -762,6 +789,20 @@ nav a:hover {
     display: none;
 }
 
+.header-container {
+    position: fixed;
+    background: url(../img/BGnav.png);
+    background-repeat: repeat-x;
+    background-overflow: hidden;
+    float: left;
+    width: 100%;
+    height: auto;
+    min-height: 55px;
+    z-index: 2;
+    vertical-align: top;
+    
+}
+
 #footerNav a {
     display: inline-block;
     margin-top: 2%;
@@ -848,6 +889,20 @@ nav a:hover {
 
 .mobile {
     display: none;
+}
+
+.header-container {
+    position: fixed;
+    background: url(../img/BGnav.png);
+    background-repeat: repeat-x;
+    background-overflow: hidden;
+    float: left;
+    width: 100%;
+    height: auto;
+    min-height: 55px;
+    z-index: 2;
+    vertical-align: top;
+    
 }
 
 #footerNav a {

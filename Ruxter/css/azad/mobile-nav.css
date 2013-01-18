@@ -48,7 +48,7 @@ nav .btn-navbar .icon-bar {
   display: block;
   width: 18px;
   height: 2px;
-  background-color: #000;
+  background-color: #9a4d9e;
   -webkit-border-radius: 1px;
   -moz-border-radius: 1px;
   border-radius: 1px;
@@ -57,7 +57,7 @@ nav .btn-navbar .icon-bar {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 nav .btn-navbar.active .icon-bar {
-  background-color: #a67b45;
+  background-color: #9a4d9e;
   -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
   -moz-box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
   box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.25);
@@ -72,11 +72,10 @@ nav .btn-navbar.active .icon-bar {
 }
 /* The unordered list with the menu */
 ul#menu {
-  background: #000;
+  background: #9a4d9e;
   display: none;
   position: absolute;
-  top: 40px;
-  left: 0;
+  top: 50px;
   width: 100%;
   font-size: 15px !important;
   overflow-x: hidden;
@@ -87,7 +86,7 @@ ul#menu {
 }
 ul#menu li {
   display: block;
-  height: 40px;
+  height: 50px;
   width: 100%;
   border-bottom: 1px solid #ccc;
   background-color: #ededed;
@@ -125,19 +124,18 @@ ul#menu li a span {
 }
 ul#menu li a:link,
 ul#menu li a:visited {
-  color: #666;
+  color: #9a4d9e;
   text-decoration: none;
   outline: none;
 }
 ul#menu li a:hover,
 ul#menu li a:active {
-  color: #a67b45;
+  color: #9a4d9e;
   text-decoration: none;
   outline: none;
   background: rgba(0, 0, 0, 0.05);
 }
 ul#menu li.hasChildren a > span {
-  background: url(/demo/responsive-nav/img/sprite.png);
   background-position: right -97px !important;
   background-repeat: no-repeat;
 }
