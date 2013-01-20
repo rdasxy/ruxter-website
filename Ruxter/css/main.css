@@ -35,10 +35,6 @@ hr {
     padding: 0;
 }
 
-img {
-    vertical-align: middle;
-}
-
 fieldset {
     border: 0;
     margin: 0;
@@ -76,8 +72,10 @@ body {
 }
 
 .wrapper {
-    
-    max-width: 800px;
+    max-width: 800px; /* 1140px - 10% for margins */
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
     vertical-align: center;
 }
 
@@ -85,8 +83,10 @@ body {
     
    =================== */
 
-
-
+.headerWrapper {
+  max-width: 1000px;
+  vertical-align: center;
+}
 
 .bannerLogo {
     min-width: 89px;
@@ -98,6 +98,22 @@ body {
     text-align: center;
     width: 100%;
     float: left;    
+}
+
+@media screen and (max-width: 665px) {
+    .HideCart {
+      display: none;
+  }
+}
+
+.HideCart {
+    margin-right: 2%;
+}
+
+.HideCart a {
+    margin-top: 4.25%;
+    float: right;
+    padding: 5px;
 }
 
 #Padded {
@@ -153,6 +169,11 @@ body {
 
 }
 
+.righted {
+    float: right;
+
+}
+
 .heroWrapper {
     float: right;
     position: relative;
@@ -175,20 +196,20 @@ body {
 }
 
 .password  {
-    width: 35%;
+    width: 34.5%;
     line-height: 1.75em;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 3%;
     z-index: 1;
     position: relative;
     border-radius: 2px;
 }
 
 .confirm {
-    width: 35%;
+    width: 34.5%;
     line-height: 1.75em;
     margin-left: 4%;
-    margin-top: 5%;
+    margin-top: 3%;
     z-index: 1;
     position: relative;
     border-radius: 2px;
@@ -205,8 +226,8 @@ body {
     -moz-box-shadow: inset 0 0 10px 1px #000;
     -webkit-box-shadow: inset 0 0 10px 1px #000;
     box-shadow: inset 0 0 10px 1px #000;
-    margin-left: 4%;
-    margin-top: 5%;
+    margin-left: 5%;
+    margin-top: 3%;
     z-index: 1;
     position: static;
     
@@ -280,6 +301,13 @@ body {
     display: inline-block;
     width: 300px;
     margin-bottom: 10%;
+}
+
+.arrowImage {
+  float: right;
+  display: inline-block;
+  margin-top: 1%;
+  margin-right: 8%;
 }
 
 #About, 
@@ -479,11 +507,22 @@ table img {
     z-index: 2;
     vertical-align: top;
     font-size: .8em;
-    
+}
+
+.smallHero {
+    text-align: center;
+    vertical-align: center;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroWrapper {
+    display: none;
 }
 
 .heroImage {
-    min-height: 290px;
+    display: none;
 }
 
 #leftedColumn {
@@ -689,6 +728,19 @@ ul#menu li.hasChildren.hover > a span {
     font-size: .8em;   
 }
 
+.smallHero {
+    text-align: center;
+    vertical-align: center;
+    overflow: hidden;
+}
+
+.smallHero article {
+    vertical-align: center;
+    margin: 0 auto;
+    position: relative;
+    max-width: 600px;
+}
+
 #mobile {
     display: none;
 }
@@ -731,12 +783,10 @@ ul#menu li.hasChildren.hover > a span {
 }
 
 .heroWrapper {
-    margin-top: 6em;
-    width: 60%;
-    margin-bottom: 10%; 
+    display: none;
 }
 
-.heroWrapper p {
+.heroImage {
     display: none;
 }
 
@@ -755,11 +805,12 @@ nav ul {
 
 nav a {
     display: block;
+    float: right;
     margin-bottom: 10px;
     padding: 15px 0;
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
     color: #333333;
     background: transparent;
 }
@@ -800,7 +851,11 @@ nav a:hover {
     min-height: 55px;
     z-index: 2;
     vertical-align: top;
-    
+    font-size: .8em;
+}
+
+.smallHero {
+    display: none;
 }
 
 #footerNav a {
@@ -861,7 +916,7 @@ nav a {
     padding: 15px 0;
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
     color: #333333;
     background: transparent;
 }
@@ -891,6 +946,10 @@ nav a:hover {
     display: none;
 }
 
+.smallHero {
+    display: none;
+}
+
 .header-container {
     position: fixed;
     background: url(../img/BGnav.png);
@@ -902,7 +961,10 @@ nav a:hover {
     min-height: 55px;
     z-index: 2;
     vertical-align: top;
-    
+}
+
+.HideCart a {
+    font-size: .8em;
 }
 
 #footerNav a {
@@ -949,6 +1011,8 @@ nav a:hover {
 .heroWrapper {
     margin-top: 10em;
     width: 50%;
+    margin-right: 5%;
+    max-width: 600px;
     margin-bottom: 15%;
 }
 
@@ -963,7 +1027,7 @@ nav a {
     padding: 15px 0;
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
     color: #333333;
     background: transparent;
 }
@@ -996,7 +1060,7 @@ nav a:hover {
         float: left;
         width: auto;
         margin-top: 3%;
-
+        display: inline-block;
         padding: 2%;
         margin-bottom: 0;
     }
@@ -1042,7 +1106,7 @@ nav a:hover {
     nav {
         display: inline;
         float: right;
-        width: 75%;
+        width: 80%;
     }
 
 /* ============
@@ -1068,12 +1132,7 @@ nav a:hover {
     Maximal Width
    =============== */
 
-    .wrapper {
-        max-width: 800px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-        position: relative;
-        z-index: 1;
-    }
+    
 }
 
 /* ==========================================================================
@@ -1138,10 +1197,16 @@ nav a:hover {
     *zoom: 1;
 }
 
-.header-container img {
+.bannerLogo {
     display: inline;
     float: left;    
     width: 15%;
+}
+
+.cart {
+    display: inline-block;
+    float: right;
+
 }
 
 .about img {
