@@ -1,0 +1,65 @@
+@media handheld, screen and (max-width: 840px) {
+
+.accordian {
+	width: 100%;
+	margin: 0;
+}
+
+.accordian li {
+	list-style-type: none;
+	padding: 0 5px;
+}
+
+.dimension {
+	height: auto;
+}
+	
+.even, 
+.odd {
+	font-weight: normal;
+	height: 60px;
+	margin: 0;
+	width: 100%;
+	padding-top: 3px;
+	padding-left: 10px;
+	border: 1px solid #000;
+	box-shadow: inset 0px 0px 8px 1px #000;
+	-moz-box-shadow: inset 0px 0px 8px 1px #000;
+	-webkit-box-shadow: inset 0px 0px 8px 1px #000;
+}
+
+.odd a {
+	text-decoration: none;
+	color: #9a4d9e;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+
+.even a {
+	text-decoration: none;
+	color: #9a4d9e;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: normal;	
+}
+
+.even h3 {
+	text-align: center;
+}
+
+.odd h3 {
+	text-align: center;
+}
+	
+.even {
+	background-color: #ececec;
+}
+	
+.odd {
+	border: 1px solid black;
+	background: #ececec;
+	color: #000;
+}
+
+}
