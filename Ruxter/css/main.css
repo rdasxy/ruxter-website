@@ -99,7 +99,6 @@ body {
 }
 
 .footer-container {
-    border-top: 1px solid #fff;
     text-align: center;
     width: 100%;
     float: left;    
@@ -126,15 +125,12 @@ body {
     padding-top: 5%;
 }
 
-#BackTop {
-    background-color: #333333;
-    line-height: 3em;
-}
-
-#BackTop a {
+.BackTop {
     color: #ececec;
+    background-color: #333;
+    line-height: 2em;
     font-family: arial;
-    font-weight: normal;
+    font-weight: lighter;
     text-align: center;
     text-decoration: none;
     font-size: 1.5em;
@@ -172,6 +168,11 @@ body {
     background-repeat: no-repeat;
     position: relative;
 
+}
+
+.heroContain {
+  width: 100%; 
+  max-width: 1200px;
 }
 
 .righted {
@@ -222,15 +223,15 @@ body {
 
 .heroButton {
     background-color: #9a4d9e;
-    border: 0px;
+    border: 1px solid #333;
     border-radius: 4px;
     color: white;
     line-height: 2.2em;
     font-size: 1.5em;
     width: 76%;
-    -moz-box-shadow: inset 0 0 10px 1px #000;
-    -webkit-box-shadow: inset 0 0 10px 1px #000;
-    box-shadow: inset 0 0 10px 1px #000;
+    -moz-box-shadow: inset 0 0 4px 1px #333;
+    -webkit-box-shadow: inset 0 0 4px 1px #333;
+    box-shadow: inset 0 0 4px 1px #333;
     margin-left: 5%;
     margin-top: 3%;
     z-index: 1;
@@ -239,12 +240,16 @@ body {
 }
 .contactButton {
     background-color: #9a4d9e;
-    border: 0px;
+    border: 1px solid #333;
     border-radius: 4px;
     box-shadow: 2px;
     color: white;
     line-height: 2.2em;
     font-size: 1.5em;
+    -moz-box-shadow: inset 0 0 4px 1px #333;
+    -webkit-box-shadow: inset 0 0 4px 1px #333;
+    box-shadow: inset 0 0 4px 1px #333;
+    margin-left: 5%;
     width: 61%;
     margin-left: 20%;
     margin-bottom: 10%;
@@ -327,7 +332,8 @@ body {
 #Coupons, 
 #Service,
 #Plans {
-    padding: 5%;
+    padding: 2em;
+    padding-bottom: 4em;
 }
 
 #about img {
@@ -945,6 +951,7 @@ nav a:hover {
 .heroWrapper {
     margin-top: 6em;
     width: 55%;
+    max-width: 600px;
     margin-bottom: 10%;
 }
 
@@ -1060,7 +1067,6 @@ nav a:hover {
 .heroWrapper {
     margin-top: 10em;
     width: 50%;
-    margin-right: 5%;
     max-width: 600px;
     margin-bottom: 15%;
 }
@@ -1260,7 +1266,7 @@ nav a:hover {
 
 .about img {
     width: 100%;
-    padding-bottom: 5%; 
+    padding-bottom: 2em; 
 }
 
 /* ==========================================================================
