@@ -27,16 +27,6 @@ $(function() {
 		// Get the content that needs to be hidden
 		var old = $('.accordian li:odd:visible');
 
-//	        var link=this;
-//	        $.smoothScroll({
-//		    scrollElement: cur,
-//		    scrollTarget: old,
-//		    offset: -40,
-//		    afterScroll: alert("scrolled"), 
-//		    scrollTarget: '#findme'
-//		});
-
-		
 		// Make sure the content that needs to be shown 
 		// isn't already visible
 		if ( cur.is(':visible') ) {
@@ -44,20 +34,7 @@ $(function() {
 			return false;
 		    }
 		
-		// Hide the old content
-		//old.slideToggle(500);
-		
 		// Show the new content
 		cur.stop().slideToggle(500);
-
-	  	// Animate (add) the padding in the new link
-		//$(this).stop().animate( {
-			//paddingLeft:"0px"
-		//} );
-		
-		// Animate (remove) the padding in the old link
-		//old.prev().stop().animate( {
-			//paddingLeft:"0px"
-		//} );
 	} );
 });
