@@ -39,7 +39,7 @@ html[xmlns] .slides {display: block;}
 
 /* FlexSlider Default Theme
 *********************************/
-.flexslider {margin: 0 0 60px; background: transparent; border: none; position: relative; margin-bottom: 200px; zoom: 1;}
+.flexslider {margin: 0 0 60px; background: transparent; border: none; position: relative; margin-bottom: 3em; zoom: 1;}
 .flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
 .loading .flex-viewport {max-height: 300px;}
 .flexslider .slides {zoom: 1;}
@@ -50,8 +50,8 @@ html[xmlns] .slides {display: block;}
 /* Direction Nav */
 .flex-direction-nav {*height: 0;}
 .flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: inline;  position: relative; top: 98%; z-index: 10; cursor: pointer; text-indent: -9999px; }
-.flex-direction-nav .flex-next {position: absolute; background: url(../img/RightArrow.png) no-repeat 0 0; background-position: 100% 0; right: 25%; }
-.flex-direction-nav .flex-prev {position: absolute; background: url(../img/LeftArrow.png) no-repeat 0 0; left: 25%; }
+.flex-direction-nav .flex-next {position: absolute; background: url(../img/RightArrow.png) no-repeat 0 0; background-position: 100% 0; right: 22%; }
+.flex-direction-nav .flex-prev {position: absolute; background: url(../img/LeftArrow.png) no-repeat 0 0; left: 22%; }
 .flexslider:hover .flex-next {opacity: 0.8;}
 .flexslider:hover .flex-prev {opacity: 0.8;}
 .flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}

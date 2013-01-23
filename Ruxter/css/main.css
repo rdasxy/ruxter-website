@@ -160,6 +160,10 @@ body {
     text-align: center;
 }
 
+.SmallImage {
+    max-height: 500px
+}
+
 .heroImage {
     width: 100%;
     background: url(../img/RuxterHero.jpg);
@@ -173,6 +177,11 @@ body {
 .heroContain {
   width: 100%; 
   max-width: 1200px;
+  display: block;
+  float: inherit;
+  margin: 0 auto;
+  text-align: center;
+
 }
 
 .righted {
@@ -329,10 +338,14 @@ body {
 
 #About, 
 #Coupons, 
-#Service,
-#Plans {
+#Service  {
     padding: 2em;
     padding-bottom: 4em;
+}
+
+#Plans {
+    padding: 2em;
+    line-height: 2.25em;
 }
 
 #about img {

@@ -8,11 +8,12 @@
 
 .accordian li {
 	list-style-type: none;
-	padding: 0 5px;
 }
 
 .dimension {
 	height: auto;
+	margin: 0;
+	padding: 0;
 }
 	
 .even {
@@ -21,7 +22,6 @@
 	margin: 0;
 	width: 100%;
 	padding-top: 3px;
-	padding-left: 10px;
 	border: 1px solid #000;
 	background: url(../img/TableShadow.png) no-repeat;
 	background-size: 100% 100%;
@@ -33,7 +33,6 @@
 	margin: 0;
 	width: 100%;
 	padding-top: 3px;
-	padding-left: 10px;
 	border: 1px solid #000;
 	background: url(../img/TableShadow.png) no-repeat;
 	background-size: 100% 100%;
