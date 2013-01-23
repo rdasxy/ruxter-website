@@ -678,6 +678,7 @@ ul#menu {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 0px;
 }
 ul#menu li {
   display: block;
@@ -712,7 +713,7 @@ ul#menu li.hasChildren ul li {
 ul#menu li a {
   display: block;
   text-decoration: none;
-  padding: 12px 10px;
+  padding: 12px 10px 0px 10px;
   font-weight: normal;
 }
 ul#menu li a span {
