@@ -26,6 +26,16 @@ $(function() {
 		
 		// Get the content that needs to be hidden
 		var old = $('.accordian li:odd:visible');
+
+//	        var link=this;
+//	        $.smoothScroll({
+//		    scrollElement: cur,
+//		    scrollTarget: old,
+//		    offset: -40,
+//		    afterScroll: alert("scrolled"), 
+//		    scrollTarget: '#findme'
+//		});
+
 		
 		// Make sure the content that needs to be shown 
 		// isn't already visible
@@ -40,7 +50,7 @@ $(function() {
 		// Show the new content
 		cur.stop().slideToggle(500);
 
-		// Animate (add) the padding in the new link
+	  	// Animate (add) the padding in the new link
 		//$(this).stop().animate( {
 			//paddingLeft:"0px"
 		//} );

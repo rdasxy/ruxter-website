@@ -331,6 +331,7 @@
             </div>    
                 <div class="accordian mobiletable clearfix">
                         
+		            <div id="CouponsOnly"></div>
                             <li><h3><a href="#CouponsOnly">Coupons Only<img class="arrowImage" src="img/DownArrow.png"/></a></h3></li>
                                 <li><img class="accordionBadge" src="img/couponBadge.png"><br>
                                     <h3 id="Bigger">$9</h3><h4>per month</h4>
@@ -344,7 +345,8 @@
                                     ·Ruxter Mobile Coupon Creator<img class="checkMark" src="img/checkMark.png" /><br>
                                     ·Send coupons via social media<img class="checkMark" src="img/checkMark.png" /><br></p>
                                 </li>
-                            
+
+                            <div id="CampaignOnly"></div>
                             <li><h3><a href="#CampaignOnly">Campaign Only<img class="arrowImage" src="img/DownArrow.png"/></a></h3></li>
                                 <li><img class="accordionBadge" src="img/hammerBadge.png"><br>
                                     <h3 id="Bigger">$29</h3><h4>per month</h4>
@@ -365,7 +367,8 @@
                                     ·Send coupons via text message<img class="checkMark" src="img/checkMark.png" /><br>
                                     ·QR Code Generator<img class="checkMark" src="img/checkMark.png" /></p>
                                 </li>
-                            
+
+                            <div id="MobilePro"></div>
                             <li><h3><a href="#MobilePro">Mobile Pro<img class="arrowImage" src="img/DownArrow.png"/></a></h3></li>
                                 <li><img class="accordionBadge" src="img/rocketBadge.png"><br>
                                     <h3  id="Bigger">$49</h3><h4>per month</h4>
@@ -388,9 +391,10 @@
                                     ·QR Code Generator<img class="checkMark" src="img/checkMark.png" /></p>
                                 </li>
                             
+			    <div id="MobileEnterprise"></div>
                             <li><h3><a href="#MobileEnterprise">Mobile Enterprise<img class="arrowImage" src="img/DownArrow.png"/></a></h3></li>
                                 <li><img class="accordionBadge" src="img/blockBadge.png"><br>
-                                    <h3 id="Bigger">$99</h3><h4>per month</h4>
+				    <h3 id="Bigger">$99</h3><h4>per month</h4>
                                     <p class="tablePadded"><strong>Mobilize </strong><br>
                                     ·30 Day FREE Trial<img class="checkMark" src="img/checkMark.png" /><br>
                                     ·5 Locations<img class="checkMark" src="img/checkMark.png" /><br>
@@ -501,7 +505,6 @@
     });
 
     $('a').smoothScroll({
-            excludeWithin: ['.links', '.prev', '.next', '.tour'],
             offset: -35
         });
 
