@@ -41,11 +41,11 @@
                 <a href="#hero"><img class="bannerLogo" src="img/RuxterLogo.png" /></a>
                 <nav id="wide">
                     <ul id="wide">
-                        <li><a id="wide" href="#About">About</a></li>
-                        <li><a id="wide" href="#Coupons">Mobile Coupons</a></li>
-                        <li><a id="wide" href="#Service">Services</a></li>
-                        <li><a id="wide" href="#Plans">Plans</a></li>
-                        <li><a id="wide" href="#Contact">Contact</a></li>
+                        <li><a id="wide" class="scroll" href="#About">About</a></li>
+                        <li><a id="wide" class="scroll" href="#Coupons">Mobile Coupons</a></li>
+                        <li><a id="wide" class="scroll" href="#Service">Services</a></li>
+                        <li><a id="wide" class="scroll" href="#Plans">Plans</a></li>
+                        <li><a id="wide" class="scroll" href="#Contact">Contact</a></li>
                     </ul>
                     <div class="HideCart" id="wide">
                          <a href="#"><img class="cart" src="img/RuxterCart.png" />View Cart</a>
@@ -486,6 +486,26 @@
         <script src="js/jquery.flexslider.js"></script>
         <script src="js/script.js"></script>
         <script src="js/selectivizr-1.0.3.min.js"></script>
+
+      
+
+
+
+<!--Smooth Scroll-->
+<script>
+jQuery(document).ready(function($) {
+ 
+    $(".scroll").click(function(event){     
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    });
+});
+</script
+<!--End of Smooth Scroll-->
+
+
+
+
 
 <!-- Add jQuery From the Google AJAX Libraries --> 
 <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script> -->
