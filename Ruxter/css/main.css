@@ -137,6 +137,10 @@ body {
     width: 100%;
 }
 
+.BackTop:hover {
+    opacity: .8;
+}
+
 #GreySpan {
     background-color: #cbcbcb;
     line-height: 1em;
@@ -245,8 +249,13 @@ body {
     margin-top: 3%;
     z-index: 1;
     position: static;
-    
 }
+
+.heroButton:hover, 
+.contactButton:hover {
+    background-color: #743a77;
+}
+
 .contactButton {
     background-color: #9a4d9e;
     border: 1px solid #333;
@@ -296,6 +305,10 @@ body {
     margin-bottom: 8%;
 }
 
+.tableButton:hover {
+    background-color: #743a77;
+}
+
 .contact p {
     margin-left: 20%;
     text-align: left;
@@ -316,10 +329,18 @@ body {
     position: relative;
 }
 
+#footerColumn:hover {
+    text-decoration: underline;
+}
+
 .socials {
     display: inline-block;
     width: 300px;
     margin-bottom: 10%;
+}
+
+.socials a:hover {
+    opacity: .8;
 }
 
 .arrowImage {
@@ -802,7 +823,7 @@ ul#menu li.hasChildren.hover > a span {
 #footerNav a {
     display: inline-block;
     margin-top: 2%;
-    margin-left: 1%;
+    margin-left: 0.8%;
     text-decoration: none;
     font-weight: normal;
     font-size: .8em;
