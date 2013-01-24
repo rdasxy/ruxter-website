@@ -539,6 +539,8 @@ table img {
     padding-top: 20px;
 }
 
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -579,6 +581,10 @@ table img {
     overflow: hidden;
 }
 
+.flex-control-nav a {
+
+}
+
 .heroWrapper {
     display: none;
 }
@@ -610,10 +616,10 @@ table img {
 }
 
 .caption {
-    margin-top: 20%;
+    margin-top: 2%;
     margin-bottom: 2%;
     width: 100%;
-    position: absolute;
+    position: relative;
 }
 
 .logo {
@@ -852,11 +858,11 @@ ul#menu li.hasChildren.hover > a span {
 }
 
 .caption {
-    margin-top: 20%;
+    margin-top: 2%;
     margin-bottom: 2%;
     display: block;
     width: 100%;
-    position: absolute;
+    position: relative;
 }
 
 .heroWrapper {
@@ -967,11 +973,11 @@ nav a:hover {
 }
 
 .caption {
-    margin-top: 20%;
+    margin-top: 2%;
     margin-bottom: 2%;
     display: block;
     width: 100%;
-    position: absolute;
+    position: relative;
 }
 
 .logo {
@@ -1083,11 +1089,11 @@ nav a:hover {
 }
 
 .caption {
-    margin-top: 20%;
+    margin-top: 2%;
     margin-bottom: 2%;
     display: block;
     width: 100%;
-    position: absolute;
+    position: relative;
 }
 
 .logo {
