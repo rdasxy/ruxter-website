@@ -504,6 +504,7 @@
     });
 
     $('a').smoothScroll({
+            excludeWithin: ['.links', '.prev', '.next', '.tour', '.flex-next'],
             offset: -35
         });
 
