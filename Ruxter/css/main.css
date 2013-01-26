@@ -138,10 +138,6 @@ body {
     width: 100%;
 }
 
-.BackTop a {
-    text-decoration: none;
-}
-
 .BackTop:hover {
     opacity: .8;
 }
