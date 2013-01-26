@@ -12,6 +12,7 @@ textarea {
 
 body {
     font-size: 1em;
+    font: arial;
     line-height: 1.4;
     background: url(../img/BGnoise.jpg);
 }
@@ -135,6 +136,10 @@ body {
     text-decoration: none;
     font-size: 1.5em;
     width: 100%;
+}
+
+.BackTop a {
+    text-decoration: none;
 }
 
 .BackTop:hover {
@@ -469,6 +474,10 @@ table {
     .mobiletable {
         display: none;
     }
+}
+
+table p {
+    margin-left: 5%;
 }
 
 table h3, h4 {
@@ -1319,11 +1328,6 @@ nav a:hover {
         color: #000 !important; /* Black prints faster: h5bp.com/s */
         box-shadow: none !important;
         text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
     }
 
     a[href]:after {
