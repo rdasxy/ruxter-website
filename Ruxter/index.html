@@ -453,19 +453,33 @@
         <script src="js/vendor/jquery-1.8.3.min.js"></script> 
         <script type="text/javascript">
             $(window).load(function() {
-	    $('.flexslider').flexslider({
-	    directionNav : false,
-	    slideshow: false,
-	    animation: "slide",
-	    controlsContainer: ".flex-container",
-	    start: function(slider) {
-	    $('.slides li img').click(function(event){
-            event.preventDefault();
-            slider.flexAnimate(slider.getTarget("next"));
-	    });
-	    }
-	    });
+	            $('.flexslider').flexslider({
+	                   directionNav : false,
+	                   slideshow: false,
+	                   animation: "slide",
+	                   controlsContainer: ".flex-container",
+	               start: function(slider) {
+	                   $('.slides li img').click(function(event){
+                            event.preventDefault();
+                            slider.flexAnimate(slider.getTarget("next"));
+	                   });
+	               }
+	           });
             });
+        </script>
+        <script type="text/javascript">
+        var initialWindowWidth = $(window).width();
+        var resizeWindow = function(){
+                document.location.reload(true);    
+        }
+        $(function(){
+            $(window).resize(function() {
+                if($(window).width() < 481 && initialWindowWidth > 481){
+                    setTimeout(resizeWindow,100);
+                }
+            });
+        });
+
         </script>
 	<!--azad begin-->
 <script src="azad/js/plugins.js"></script>
