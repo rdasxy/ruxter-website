@@ -184,7 +184,6 @@ body {
     background-position: top;
     background-repeat: no-repeat;
     position: relative;
-
 }
 
 .heroContain {
@@ -194,12 +193,10 @@ body {
   float: inherit;
   margin: 0 auto;
   text-align: center;
-
 }
 
 .righted {
     float: right;
-
 }
 
 .heroWrapper {
@@ -215,7 +212,7 @@ body {
 }
 
 .email {
-    width: 75%;
+    width: 74%;
     line-height: 1.75em;
     margin-left: 5%;
     z-index: 1;
@@ -224,7 +221,7 @@ body {
 }
 
 .password  {
-    width: 34.5%;
+    width: 34%;
     line-height: 1.75em;
     margin-left: 5%;
     margin-top: 3%;
@@ -234,7 +231,7 @@ body {
 }
 
 .confirm {
-    width: 34.5%;
+    width: 34%;
     line-height: 1.75em;
     margin-left: 4%;
     margin-top: 3%;
@@ -250,7 +247,7 @@ body {
     color: white;
     line-height: 2.2em;
     font-size: 1.5em;
-    width: 76%;
+    width: 75%;
     -moz-box-shadow: inset 0 0 4px 1px #333;
     -webkit-box-shadow: inset 0 0 4px 1px #333;
     box-shadow: inset 0 0 4px 1px #333;
