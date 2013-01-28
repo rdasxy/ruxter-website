@@ -10,6 +10,14 @@ textarea {
     color: #333333;
 }
 
+a {
+  text-decoration: none; 
+}
+
+a:visited {
+  text-decoration: none;
+}
+
 body {
     font-size: 1em;
     font: arial;
