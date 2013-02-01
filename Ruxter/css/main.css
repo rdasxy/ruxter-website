@@ -220,26 +220,6 @@ body {
     border-radius: 2px;
 }
 
-.password  {
-    width: 34%;
-    line-height: 1.75em;
-    margin-left: 5%;
-    margin-top: 3%;
-    z-index: 1;
-    position: relative;
-    border-radius: 2px;
-}
-
-.confirm {
-    width: 34%;
-    line-height: 1.75em;
-    margin-left: 4%;
-    margin-top: 3%;
-    z-index: 1;
-    position: relative;
-    border-radius: 2px;
-}
-
 .heroButton {
     background-color: #9a4d9e;
     border: 1px solid #333;
@@ -569,6 +549,26 @@ table img {
     display: none;
 }
 
+.password  {
+    width: 74%;
+    line-height: 1.75em;
+    margin-left: 5%;
+    margin-top: 3%;
+    z-index: 1;
+    position: relative;
+    border-radius: 2px;
+}
+
+.confirm {
+    width: 74%;
+    line-height: 1.75em;
+    margin-left: 5%;
+    margin-top: 3%;
+    z-index: 1;
+    position: relative;
+    border-radius: 2px;
+}
+
 .header-container {
     position: fixed;
     background: url(../img/BGnav.png);
@@ -589,10 +589,6 @@ table img {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-}
-
-.flex-control-nav a {
-
 }
 
 .heroWrapper {
@@ -815,6 +811,26 @@ ul#menu li.hasChildren.hover > a span {
     font-size: .8em;   
 }
 
+.password  {
+    width: 74%;
+    line-height: 1.75em;
+    margin-left: 5%;
+    margin-top: 3%;
+    z-index: 1;
+    position: relative;
+    border-radius: 2px;
+}
+
+.confirm {
+    width: 74%;
+    line-height: 1.75em;
+    margin-left: 5%;
+    margin-top: 3%;
+    z-index: 1;
+    position: relative;
+    border-radius: 2px;
+}
+
 .smallHero {
     text-align: center;
     vertical-align: center;
@@ -933,6 +949,26 @@ nav a:hover {
     display: none;
 }
 
+.password  {
+    width: 34%;
+    line-height: 1.75em;
+    margin-left: 5%;
+    margin-top: 3%;
+    z-index: 1;
+    position: relative;
+    border-radius: 2px;
+}
+
+.confirm {
+    width: 34%;
+    line-height: 1.75em;
+    margin-left: 4%;
+    margin-top: 3%;
+    z-index: 1;
+    position: relative;
+    border-radius: 2px;
+}
+
 .header-container {
     position: fixed;
     background: url(../img/BGnav.png);
@@ -1044,6 +1080,26 @@ nav a:hover {
 
 .mobile {
     display: none;
+}
+
+.password  {
+    width: 34%;
+    line-height: 1.75em;
+    margin-left: 5%;
+    margin-top: 3%;
+    z-index: 1;
+    position: relative;
+    border-radius: 2px;
+}
+
+.confirm {
+    width: 34%;
+    line-height: 1.75em;
+    margin-left: 4%;
+    margin-top: 3%;
+    z-index: 1;
+    position: relative;
+    border-radius: 2px;
 }
 
 .smallHero {
