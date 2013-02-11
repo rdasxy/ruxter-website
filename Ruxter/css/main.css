@@ -535,7 +535,7 @@ table img {
    Author's custom styles
    ========================================================================== */
 
-@media handheld, screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   body { 
     width:100%;
      -webkit-text-size-adjust: 100%;
