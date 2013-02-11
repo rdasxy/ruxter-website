@@ -653,7 +653,7 @@ header nav {
   position: fixed;
   top: 0;
   left: 0;
-  zoom: 1;
+  /*zoom: 1;*/
   width: auto;
   text-align: left;
   height: 40px;
