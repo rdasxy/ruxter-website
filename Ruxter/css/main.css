@@ -535,7 +535,7 @@ table img {
    Author's custom styles
    ========================================================================== */
 
-@media screen and (max-width: 480px) {
+@media handheld, screen and (max-width: 480px) {
   body { 
     width:100%;
      -webkit-text-size-adjust: 100%;
@@ -570,7 +570,8 @@ table img {
 }
 
 .header-container {
-    position: fixed;
+    position: absolute;
+    display: block;
     background: url(../img/BGnav.png);
     background-repeat: repeat-x;
     background-overflow: hidden;
@@ -650,10 +651,10 @@ table img {
 /* The NAV element in mobile devices */
 header nav {
   display: block;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  /*zoom: 1;*/
+  zoom: 1;
   width: auto;
   text-align: left;
   height: 40px;
@@ -661,13 +662,14 @@ header nav {
 }
 /* The button on the top-right */
 nav .btn-navbar {
-  position: fixed;
+  position: absolute;
+  float: right;
   right: 10px;
   top: 6px;
   padding: 7px 10px;
   margin-left: 5px;
   margin-right: 5px;
-  margin-top: 1%;
+  margin-top: 9px;
   -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
   -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
   box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 0 rgba(255,255,255,.075);
