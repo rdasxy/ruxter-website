@@ -15,20 +15,38 @@
                 minimum-scale=1; 
                 user-scalable=no;" />
         <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script>
+        function loadCSSFile(filename) {
+            var fileref=document.createElement("link");
+            fileref.setAttribute("rel", "stylesheet");
+            fileref.setAttribute("type", "text/css");
+            fileref.setAttribute("href", filename);
+            if (typeof fileref!="undefined");
+              document.getElementsByTagName("head")[0].appendChild(fileref);
+        }
+        var isAndroid = navigator.userAgent.toLowerCase().indexOf("android") > -1;
+        if (isAndroid) {
+            loadCSSFile("css/mainAndroid.css");
+            alert("Loaded Android CSS");
+        } else {
+            loadCSSFile("css/main.css");
+            alert("Loaded Non-Android CSS");
+        }
+    </script>
+        <!--<link rel="stylesheet" href="css/main.css">-->
         <link rel="stylesheet" href="css/flexslider.css">
         <link rel="stylesheet" href="css/MobileAccordion.css">
 	<!--Azad's Stuff begin-->
 	<link rel="stylesheet" href="azad/css/normalise.css" media="screen">
 	<link rel="stylesheet" href="azad/css/atmosphere.css" media="screen">
 	<!-- Media Queries -->
-	<link  rel="stylesheet" href="azad/css/mobile-nav.css" media="screen and (min-width: 320px) and (max-width: 1024px)">
+	<!--<link  rel="stylesheet" href="azad/css/mobile-nav.css" media="screen and (min-width: 320px) and (max-width: 1024px)">
 	<link  rel="stylesheet" href="azad/css/smartphone.css" media="screen and (min-width:320px) and (max-width:480px)">
 	<link  rel="stylesheet" href="azad/css/tablet.css" media="screen and (min-width: 481px) and (max-width: 767px)">
 	<link  rel="stylesheet" href="azad/css/ipad.css" media="screen and (min-width: 768px) and (max-width: 1024px)">
-	<link  rel="stylesheet" href="azad/css/desktop.css" media="screen and (min-width: 1025px)">
+	<link  rel="stylesheet" href="azad/css/desktop.css" media="screen and (min-width: 1025px)">-->
 	<!--Azad's Stuff end-->
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -498,24 +516,26 @@
 <!--Beg of Scroll-->
 <script src="js/smoothscroll.js"></script>
 <script>    
-    jQuery(function($){
-         $('#menu').click(function(){
-         $('#menu').toggle();
-            });
-    });
-    $('a').smoothScroll({
-            excludeWithin: ['.links', '.prev', '.next', '.tour', '.flex-next'],
-            offset: -35
+    if (!isAndroid) {
+        jQuery(function($){
+             $('#menu').click(function(){
+             $('#menu').toggle();
+                });
         });
-    $(window).load(function() {
-        $('#supersized, #container').animate({
-            opacity: 1}, 600);
-        $("#nyan, #introBox").delay(1200).animate({
-            opacity: 1}, 1200);
-        $('#scrollInstructions').delay(1200).animate({
-            opacity: 0.5}, 1200);
-        $('#topRider').slideDown(1000);
-    });
+        $('a').smoothScroll({
+                excludeWithin: ['.links', '.prev', '.next', '.tour', '.flex-next'],
+                offset: -35
+            });
+        $(window).load(function() {
+            $('#supersized, #container').animate({
+                opacity: 1}, 600);
+            $("#nyan, #introBox").delay(1200).animate({
+                opacity: 1}, 1200);
+            $('#scrollInstructions').delay(1200).animate({
+                opacity: 0.5}, 1200);
+            $('#topRider').slideDown(1000);
+        });
+    }
   </script>
 <!--end of scroll-->
 <!-- Add jQuery From the Google AJAX Libraries --> 
