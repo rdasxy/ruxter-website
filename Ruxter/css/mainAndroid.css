@@ -636,19 +636,26 @@ table img {
     margin-left: 40%;
 }
 
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     float: left;
     width: 81%;
+    vertical-align: top;
 }
 
 nav a {
-    display: block;
+    display: inline-block;
     float: left;
     font-size: .5;
     line-height: .7;
-    margin-bottom: 10px;
+    margin-top: 20px;
     text-align: left;
     text-decoration: none;
+    padding-left: 2.5%;
     font-weight: normal;
     color: #333333;
     background: transparent;
