@@ -645,13 +645,12 @@ nav {
     float: right;
     display: block;
     padding-right: 10px;
-    width: 79%;
+    width: 77%;
 }
 
 nav a {
     display: block;
-    float: right;
-    font-size: .5;
+    float: left;
     line-height: 1;
     margin-top: 20px;
     text-align: left;
