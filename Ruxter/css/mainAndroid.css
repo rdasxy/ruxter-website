@@ -643,7 +643,8 @@ nav ul {
 
 nav {
     float: right;
-    width: 81%;
+    padding-right: 10px;
+    width: 78%;
 }
 
 nav a {
