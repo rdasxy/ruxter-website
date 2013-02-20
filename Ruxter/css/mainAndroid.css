@@ -643,9 +643,9 @@ nav ul {
 
 nav {
     float: right;
-    display: block;
+    display: inline-block;
     padding-right: 10px;
-    width: 78%;
+    width: auto;
 }
 
 nav a {
