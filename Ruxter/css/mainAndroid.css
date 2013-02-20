@@ -579,7 +579,7 @@ table img {
     height: auto;
     min-height: 55px;
     z-index: 2;
-    vertical-align: top;
+    vertical-align: baseline;
     font-size: .8em;
 }
 
@@ -642,14 +642,13 @@ nav ul {
 }
 
 nav {
-    float: left;
+    float: right;
     width: 81%;
-    vertical-align: top;
 }
 
 nav a {
-    display: inline-block;
-    float: left;
+    display: block;
+    float: right;
     font-size: .5;
     line-height: .7;
     margin-top: 20px;
