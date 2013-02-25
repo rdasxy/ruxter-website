@@ -795,7 +795,7 @@ ul#menu li.hasChildren.hover > a span {
 
 
 
-@media screen and (min-width: 481px) and (max-width: 720px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   body { width:100%; }
   /* and other declarations */
 
@@ -941,7 +941,7 @@ nav a:hover {
 
 
 
-@media screen and (min-width: 721px) and (max-width: 1140px) {
+@media screen and (min-width: 769px) and (max-width: 1140px) {
   body { width:100%; }
   /* and other declarations */
 #mobile {
