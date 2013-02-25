@@ -70,6 +70,11 @@ h1 {
     text-align: center;
     font-family: viga, arial;
     font-size: 2.5em;
+    line-height: 1em;
+}
+
+p {
+    margin-left: 5%;
 }
 
 /* ===== Initializr Styles ==================================================
@@ -213,7 +218,7 @@ body {
 .email {
     width: 74%;
     line-height: 1.75em;
-    margin-left: 5%;
+    margin-left: 4%;
     z-index: 1;
     position: relative;
     border-radius: 2px;
@@ -230,7 +235,7 @@ body {
     -moz-box-shadow: inset 0 0 4px 1px #333;
     -webkit-box-shadow: inset 0 0 4px 1px #333;
     box-shadow: inset 0 0 4px 1px #333;
-    margin-left: 5%;
+    margin-left: 4%;
     margin-top: 3%;
     z-index: 1;
     position: static;
@@ -551,7 +556,7 @@ table img {
 .password  {
     width: 74%;
     line-height: 1.75em;
-    margin-left: 5%;
+    margin-left: 4%;
     margin-top: 3%;
     z-index: 1;
     position: relative;
@@ -561,7 +566,7 @@ table img {
 .confirm {
     width: 74%;
     line-height: 1.75em;
-    margin-left: 5%;
+    margin-left: 4%;
     margin-top: 3%;
     z-index: 1;
     position: relative;
@@ -674,7 +679,7 @@ nav a:hover {
 
 
 
-@media screen and (min-width: 481px) and (max-width: 720px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   body { width:100%; }
   /* and other declarations */
 
@@ -695,7 +700,7 @@ nav a:hover {
 .password  {
     width: 74%;
     line-height: 1.75em;
-    margin-left: 5%;
+    margin-left: 4%;
     margin-top: 3%;
     z-index: 1;
     position: relative;
@@ -705,7 +710,7 @@ nav a:hover {
 .confirm {
     width: 74%;
     line-height: 1.75em;
-    margin-left: 5%;
+    margin-left: 4%;
     margin-top: 3%;
     z-index: 1;
     position: relative;
@@ -832,9 +837,9 @@ nav a:hover {
 }
 
 .password  {
-    width: 34%;
+    width: 74%;
     line-height: 1.75em;
-    margin-left: 5%;
+    margin-left: 4%;
     margin-top: 3%;
     z-index: 1;
     position: relative;
@@ -842,7 +847,7 @@ nav a:hover {
 }
 
 .confirm {
-    width: 34%;
+    width: 74%;
     line-height: 1.75em;
     margin-left: 4%;
     margin-top: 3%;
@@ -968,7 +973,7 @@ nav a:hover {
 .password  {
     width: 34%;
     line-height: 1.75em;
-    margin-left: 5%;
+    margin-left: 4%;
     margin-top: 3%;
     z-index: 1;
     position: relative;
