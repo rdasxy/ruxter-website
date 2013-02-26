@@ -679,7 +679,7 @@ nav a:hover {
 
 
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 800px) {
   body { width:100%; }
   /* and other declarations */
 
@@ -825,7 +825,7 @@ nav a:hover {
 
 
 
-@media screen and (min-width: 721px) and (max-width: 1140px) {
+@media screen and (min-width: 801px) and (max-width: 1140px) {
   body { width:100%; }
   /* and other declarations */
 #mobile {
