@@ -1,0 +1,65 @@
+@media handheld, screen and (max-width: 2000px) {
+
+.accordian {
+	width: 100%;
+	margin: 0;
+	background-color: #ececec;
+}
+
+.accordian li {
+	list-style-type: none;
+}
+
+.dimension {
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+	
+.even {
+	font-weight: normal;
+	height: 60px;
+	margin: 0;
+	width: 100%;
+	padding-top: 3px;
+	border: 1px solid #000;
+	background: url(../img/TableShadow.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.odd {
+	font-weight: normal;
+	height: 60px;
+	margin: 0;
+	width: 100%;
+	padding-top: 3px;
+	border: 1px solid #000;
+	background: url(../img/TableShadow.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.odd a {
+	text-decoration: none;
+	color: #9a4d9e;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+
+.even a {
+	text-decoration: none;
+	color: #9a4d9e;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: normal;	
+}
+
+.even h3 {
+	text-align: center;
+}
+
+.odd h3 {
+	text-align: center;
+}
+
+}
