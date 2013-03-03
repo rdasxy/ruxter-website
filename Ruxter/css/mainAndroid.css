@@ -136,6 +136,7 @@ body {
 #Padded {
     width: 100%;
     text-align: center;
+    float: left;
     padding-bottom: 5%;
     padding-top: 5%;
 }
@@ -422,7 +423,8 @@ h3 {
     font-size: 3em;
     font-weight: normal;
     font-family: arial;
-    margin-bottom: -2%;
+    margin-top: 8%;
+    margin-bottom: 2%;
     text-align: center;
 }
 
